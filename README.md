@@ -56,6 +56,8 @@ man zpool
 zfs create tmp_pool/zfs01   
 zfs create tmp_pool/zfs02   
 zfs create tmp_pool/zfs03   
+# Показывает все файловые системы ZFS с их размером, использованием и статусом   
+zfs list   
 # Показывает статус дедупликации (удаление дубликатов блоков данных)   
 zfs get dedup   
 # Включает дедупликацию на файловой системе zfs02   
