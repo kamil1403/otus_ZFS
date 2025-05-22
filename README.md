@@ -68,6 +68,19 @@ zfs get compressratio otus_pool/zle_test_zfs
 ```
 
 ---
+
+<a id="ext4"></a>
+## ⚙️ Форматирование и монтирование файловой системы
+
+```bash
+# Создает новый пул   
+zpool create otus_pool /dev/sdb /dev/sdc   
+# Создает четыре файловые системы   
+ 
+```
+
+---
+
 <a id="other"></a>
 ## 💡 Различные команды из урока
 
@@ -128,26 +141,7 @@ zfs set quota=10M tmp_pool/zfs01
 # Создает новый пул   
 zpool create otus_pool /dev/sdb /dev/sdc   
 # Создает четыре файловые системы   
-zfs create otus_pool/gzip_test_zfs   
-zfs create otus_pool/lz4_test_zfs   
-zfs create otus_pool/lzjb_test_zfs   
-zfs create otus_pool/zle_test_zfs   
-# Применяет сжатие   
-zfs set compression=gzip otus_pool/gzip_test_zfs   
-zfs set compression=lz4 otus_pool/lz4_test_zfs   
-zfs set compression=lzjb otus_pool/lzjb_test_zfs   
-zfs set compression=zle otus_pool/zle_test_zfs   
-# Копирует для теста файлы логов   
-cp -r /var/log/* /otus_pool/gzip_test_zfs   
-cp -r /var/log/* /otus_pool/lz4_test_zfs   
-cp -r /var/log/* /otus_pool/lzjb_test_zfs   
-cp -r /var/log/* /otus_pool/zle_test_zfs   
-# Показывает степерь сжатия файлов в каждом каталоге   
-zfs get compressratio otus_pool  
-zfs get compressratio otus_pool/gzip_test_zfs   
-zfs get compressratio otus_pool/lz4_test_zfs   
-zfs get compressratio otus_pool/lzjb_test_zfs   
-zfs get compressratio otus_pool/zle_test_zfs   
+ 
 ```
 
 ---
