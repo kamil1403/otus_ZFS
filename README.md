@@ -92,6 +92,9 @@ zfs set compression=off tmp_pool/zfs03
 rm -rf /tmp_pool/zfs03*   
 # Удаляет файловую систему zfs01   
 zfs destroy tmp_pool/zfs01   
+# Удаляет пул
+sudo zfs destroy -r tmp_pool
+sudo zpool -f destroy tmp_pool
 # Показывает установленные квоты на файловые системы   
 zfs get quota   
 # Ограничивает объём файловой системы zfs01 до 10 мегабайт
