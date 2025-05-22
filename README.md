@@ -73,11 +73,25 @@ zfs get compressratio otus_pool/zle_test_zfs
 <a id="pool"></a>
 ## ⚙️ Импорт и настройки пула
 
-```bash
-# Создает новый пул   
-zpool create otus_pool /dev/sdb /dev/sdc   
-# Создает четыре файловые системы   
- 
+```bash|
+# Показывает пулы, доступные для импорта  
+zpool import
+# Подключает пул
+zpool import otus_pool
+# Размер пула
+zpool list otus_pool
+# Тип пула
+zpool status otus_pool
+# Показывает степерь сжатия файлов в каждом каталоге   
+zfs get compressratio otus_pool  
+zfs get compressratio otus_pool/gzip_test_zfs   
+zfs get compressratio otus_pool/lz4_test_zfs   
+zfs get compressratio otus_pool/lzjb_test_zfs   
+zfs get compressratio otus_pool/zle_test_zfs 
+#Показывает контрольные суммы пула
+zfs get checksum otus_pool
+# Показыает все настройки пула
+zfs get all otus_pool 
 ```
 
 ---
@@ -131,6 +145,8 @@ sudo zpool -f destroy tmp_pool
 zfs get quota   
 # Ограничивает объём файловой системы zfs01 до 10 мегабайт
 zfs set quota=10M tmp_pool/zfs01
+# Отключает пул
+zpool export otus_pool
 ```
 
 ---
