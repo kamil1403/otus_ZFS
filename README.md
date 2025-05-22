@@ -110,7 +110,7 @@ rm -rf /otus_pool/gzip_test_zfs/*
 zfs receive otus_pool/restored_backup < /tmp/backup1.zfs
 zfs receive -F otus_pool/gzip_test_zfs < /tmp/backup1.zfs
 # Показывает существующие снапшоты
-sudo zfs list -t snapshot
+zfs list -t snapshot
 ```
 
 ---
