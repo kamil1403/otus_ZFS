@@ -74,7 +74,7 @@ cp -r /var/log/* tmp_pool/zfs02
 zfs get compression   
 zfs get compressratio   
 # Включает/выключает сжатие на zfs03   
-zfs set compression=on /tmp_pool/zfs03   
+zfs set compression=on tmp_pool/zfs03   
 zfs set compression=off tmp_pool/zfs03   
 # Удаляет файловую систему zfs03 и её содержимое (если примонтировано)   
 rm -rf /tmp_pool/zfs03*   
