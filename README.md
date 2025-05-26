@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/kamil1403/otus_ZFS/blob/main/screenshots/banner.png" alt="RAID Banner" width="800">
-</p>
-
 <h1 align="center">otus_ZFS</h1>
 <p align="center">Дата: 21-05-2025<br>Автор: Kamil Ibragimov</p>
 
