@@ -1,4 +1,4 @@
-## otus_ZFS
+otus_ZFS
 Автор: Kamil Ibragimov
 
 ## Домашнее задание: работа с ZFS
