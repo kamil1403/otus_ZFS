@@ -1,5 +1,5 @@
-<h1 align="center">otus_ZFS</h1>
-<p align="center">Дата: 21-05-2025<br>Автор: Kamil Ibragimov</p>
+## otus_ZFS
+## Автор: Kamil Ibragimov</p>
 
 ## Домашнее задание: работа с ZFS
 Задание:   
