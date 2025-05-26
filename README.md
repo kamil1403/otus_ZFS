@@ -1,5 +1,6 @@
-otus_ZFS
-Автор: Kamil Ibragimov
+otus_ZFS   
+Автор: Kamil Ibragimov   
+Дата: 21.05.2025   
 
 ## Домашнее задание: работа с ZFS
 Задание:   
