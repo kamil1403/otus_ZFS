@@ -1,5 +1,5 @@
-# otus_ZFS
-# Автор: Kamil Ibragimov
+## otus_ZFS
+
 
 ## Домашнее задание: работа с ZFS
 Задание:   
